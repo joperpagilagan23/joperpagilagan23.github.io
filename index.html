@@ -1,30 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>John Pagilagan | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | Personal Website</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #020617;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      color: #38bdf8;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #94a3b8;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #e5e7eb;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #38bdf8;
+    }
+
+    .card {
+      background: #020617;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #1e293b;
+      padding: 8px 12px;
+      margin: 6px;
+      border-radius: 5px;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      color: #94a3b8;
+    }
+
+    footer a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Hello, I’m John 👋</h1>
-  <p>Cybersecurity student | Ethical Hacking | SOC Analyst Aspirant</p>
-  <h2>About Me</h2>
-  <p>
-  Executive Diploma in Cybersecurity. Hands-on with Kali Linux, Metasploit,
-  and Linux commands.
-  </p>
-  
-  <h2>Skills</h2>
-  <ul>
-    <li>Linux & Kali Linux</li>
-    <li>Ethical Hacking Basics</li>
-    <li>Metasploit</li>
-    <li>Networking Fundamentals</li>
-  </ul>
-  
-  <h2>Contact</h2>
-  <p>Email: joperpagilagan23@gmail.com</p>
-  <p>GitHub: github.com/joperpagilagan23</p>
+
+  <header>
+    <h1>Your Name</h1>
+    <p>Cybersecurity Student | Web Enthusiast | Lifelong Learner</p>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        Hi! I’m <strong>Your Name</strong>, an aspiring cybersecurity professional
+        currently studying ethical hacking and security fundamentals.
+        I’m building hands-on projects and continuously learning new tools
+        to prepare for a SOC or junior cybersecurity role.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card skills">
+      <span>Linux</span>
+      <span>Networking Basics</span>
+      <span>Ethical Hacking</span>
+      <span>Metasploit</span>
+      <span>HTML & CSS</span>
+      <span>Git & GitHub</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>🔐 Home Lab Setup</h3>
+      <p>Built a cybersecurity lab using VirtualBox and Kali Linux for penetration testing practice.</p>
+    </div>
+
+    <div class="card">
+      <h3>🌐 Personal Website</h3>
+      <p>Created a responsive personal website using HTML, CSS, and GitHub Pages.</p>
+    </div>
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: yourname@email.com</p>
+      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Your Name. Built with ❤️ and GitHub Pages.</p>
+  </footer>
+
 </body>
 </html>
